@@ -96,7 +96,7 @@ function Hero() {
               lineHeight: 1.5,
               maxWidth: 560,
             }}>
-              Trichy's premier unisex fitness hub for strength, community, and life‑changing results.
+              Bengaluru's premier unisex fitness hub for strength, community, and life‑changing results.
             </p>
 
             <div style={{ display: "flex", gap: 12, marginTop: 36, flexWrap: "wrap" }}>
@@ -109,8 +109,8 @@ function Hero() {
             </div>
           </div>
 
-          {/* Right: image stack */}
-          <div style={{
+          {/* Right: image stack — parallax container */}
+          <div data-parallax="0.15" style={{
             position: "relative",
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
@@ -172,7 +172,7 @@ function Hero() {
           gap: 24,
         }}>
           {[
-            { v: "1,160+", l: "Google Reviews" },
+            { v: "222",    l: "Google Reviews" },
             { v: "24/7",   l: "Coach Support" },
             { v: "15+",    l: "Years Strong" },
           ].map((s) => (

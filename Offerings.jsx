@@ -162,7 +162,7 @@ function Offerings() {
           display: "flex", alignItems: "flex-end", justifyContent: "space-between",
           gap: 32, marginBottom: 48, flexWrap: "wrap",
         }}>
-          <div style={{ maxWidth: 720 }}>
+          <div data-reveal="" style={{ maxWidth: 720 }}>
             <div className="eyebrow" style={{
               fontSize: 13, fontWeight: 600, letterSpacing: "0.18em",
               textTransform: "uppercase", color: "var(--accent)", marginBottom: 12,
@@ -186,7 +186,7 @@ function Offerings() {
 
         <div className="mmm-bento-grid">
           {OFFERINGS.map((o, i) => (
-            <div key={o.title} className={`mmm-bento-card-${i} animate-fade-in-up stagger-${i + 1}`} style={{ opacity: 0 }}>
+            <div key={o.title} className={`mmm-bento-card-${i}`} data-reveal="" data-reveal-delay={String(i * 110)}>
               <OfferingCard item={o} />
             </div>
           ))}

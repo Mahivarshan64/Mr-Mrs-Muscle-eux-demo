@@ -15,7 +15,7 @@ function Contact() {
         }}>
           · Get In Touch
         </div>
-        <h2 style={{
+        <h2 data-reveal="" style={{
           fontFamily: "var(--font-display)",
           fontWeight: 900,
           fontSize: "clamp(36px, 5vw, 64px)",
@@ -32,7 +32,7 @@ function Contact() {
           gap: 64,
         }} className="mmm-split-grid">
           
-          <div style={{
+          <div data-reveal="" style={{
             padding: 40,
             background: "var(--surface-1)",
             border: "1px solid var(--border)",
@@ -66,7 +66,7 @@ function Contact() {
             </form>
           </div>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: 40 }}>
+          <div data-reveal="" data-reveal-delay="120" style={{ display: "flex", flexDirection: "column", gap: 40 }}>
             <div>
               <h3 style={{ fontSize: 24, fontWeight: 700, marginBottom: 24, color: "var(--fg1)" }}>Contact Information</h3>
               <p style={{ color: "var(--fg2)", lineHeight: 1.6, marginBottom: 32 }}>
@@ -81,9 +81,9 @@ function Contact() {
                   <div>
                     <div style={{ fontWeight: 600, color: "var(--fg1)", marginBottom: 4 }}>Location</div>
                     <div style={{ color: "var(--fg2)", lineHeight: 1.5 }}>
-                      13D / 2 Sasthri Road, 11th Cross E Rd,<br />
-                      Near Sarathambal Temple,<br />
-                      Tiruchirappalli, Tamil Nadu 620017
+                      1st floor, 18/1, Alexandria St,<br />
+                      above royal mart supermarket, near Richmond Park,<br />
+                      Richmond Town, Bengaluru, Karnataka 560025
                     </div>
                   </div>
                 </div>
@@ -94,7 +94,7 @@ function Contact() {
                   </div>
                   <div>
                     <div style={{ fontWeight: 600, color: "var(--fg1)", marginBottom: 4 }}>Phone</div>
-                    <div style={{ color: "var(--fg2)", fontFamily: "var(--font-mono)" }}>097513 45134 <br/> 98941 93919</div>
+                    <div style={{ color: "var(--fg2)", fontFamily: "var(--font-mono)" }}>097395 40008</div>
                   </div>
                 </div>
                 

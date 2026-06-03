@@ -56,7 +56,7 @@ function Navbar({ activeLink = "Features", onLinkClick = () => {} }) {
             fontWeight: 900, fontSize: 18, letterSpacing: "0.01em",
             textTransform: "uppercase", lineHeight: 1,
           }}>
-            Mr &amp; Mrs. Muscle
+            Raw Fitness
           </span>
         </a>
 

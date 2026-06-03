@@ -3,9 +3,9 @@
 // Location & Hours split section + footer.
 
 const HOURS = [
-  { day: "Monday — Friday", time: "05:30 — 21:30" },
-  { day: "Saturday",        time: "06:00 — 21:00" },
-  { day: "Sunday",          time: "06:00 — 13:00" },
+  { day: "Monday — Friday", time: "05:30 — 00:00" },
+  { day: "Saturday",        time: "06:00 — 00:00" },
+  { day: "Sunday",          time: "06:00 — 00:00" },
 ];
 
 const PEAK = [
@@ -35,7 +35,7 @@ function HoursColumn() {
         fontWeight: 900, fontSize: 32, lineHeight: 1, letterSpacing: "-0.01em",
         textTransform: "uppercase",
       }}>
-        Closes Daily at <span style={{ color: "var(--accent)" }}>9:30 PM</span>
+        Closes Daily at <span style={{ color: "var(--accent)" }}>12:00 AM</span>
       </h3>
 
       <div style={{ marginTop: 28, display: "grid", gap: 10 }}>
@@ -104,7 +104,7 @@ function ContactColumn() {
           letterSpacing: "-0.02em", textTransform: "uppercase",
           color: "var(--fg-on-accent)",
         }}>
-          Train where Trichy gets stronger.
+          Train where Richmond Town gets stronger.
         </h3>
       </div>
 
@@ -119,9 +119,9 @@ function ContactColumn() {
             <Icon_MapPin size={18} />
           </div>
           <div style={{ fontSize: 14, lineHeight: 1.55, fontWeight: 500 }}>
-            13D / 2 Sasthri Road, 11th Cross E Rd,<br />
-            Near Sarathambal Temple,<br />
-            Tiruchirappalli, Tamil Nadu 620017
+            1st floor, 18/1, Alexandria St,<br />
+            above royal mart supermarket, near Richmond Park,<br />
+            Richmond Town, Bengaluru, Karnataka 560025
           </div>
         </div>
 
@@ -135,8 +135,7 @@ function ContactColumn() {
             <Icon_Phone size={18} />
           </div>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 15, fontWeight: 500, lineHeight: 1.7 }}>
-            097513 45134<br />
-            98941 93919
+            097395 40008
           </div>
         </div>
       </div>
@@ -160,7 +159,7 @@ function LocationSection() {
       borderBottom: "1px solid var(--border-subtle)",
     }}>
       <div style={{ maxWidth: "var(--max-w)", margin: "0 auto" }}>
-        <div style={{ maxWidth: 720, marginBottom: 48 }}>
+        <div data-reveal="" style={{ maxWidth: 720, marginBottom: 48 }}>
           <div className="eyebrow" style={{
             fontSize: 13, fontWeight: 600, letterSpacing: "0.18em",
             textTransform: "uppercase", color: "var(--accent)", marginBottom: 12,
@@ -183,8 +182,12 @@ function LocationSection() {
           gridTemplateColumns: "1fr 1fr",
           gap: 16,
         }} className="mmm-split-grid">
-          <HoursColumn />
-          <ContactColumn />
+          <div data-reveal="">
+            <HoursColumn />
+          </div>
+          <div data-reveal="" data-reveal-delay="120">
+            <ContactColumn />
+          </div>
         </div>
       </div>
     </section>
@@ -227,10 +230,10 @@ function Footer() {
               <span style={{
                 fontFamily: "var(--font-display)", fontWeight: 900,
                 fontSize: 20, textTransform: "uppercase", letterSpacing: "0.01em",
-              }}>Mr &amp; Mrs. Muscle</span>
+              }}>Raw Fitness</span>
             </a>
             <p style={{ marginTop: 16, color: "var(--fg2)", fontSize: 14, lineHeight: 1.6, maxWidth: 360 }}>
-              Trichy's premier unisex fitness hub for strength, community, and life‑changing results.
+              Bengaluru's premier unisex fitness hub for strength, community, and life‑changing results.
             </p>
             <div style={{ display: "flex", gap: 8, marginTop: 24 }}>
               <button style={socialBtn} aria-label="Instagram"><Icon_Instagram size={18} /></button>
@@ -250,7 +253,7 @@ function Footer() {
           gap: 16, flexWrap: "wrap",
         }}>
           <div style={{ color: "var(--fg3)", fontSize: 13 }}>
-            © 2026 Mr &amp; Mrs. Muscle's Gym. All rights reserved.
+            © 2026 Raw Fitness. All rights reserved.
           </div>
           <div style={{ display: "flex", gap: 24 }}>
             <a href="#" style={{ ...linkStyle, color: "var(--fg3)", fontSize: 13 }}>Privacy</a>

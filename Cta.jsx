@@ -19,7 +19,7 @@ function Cta() {
         zIndex: 0,
       }} />
 
-      <div style={{
+      <div data-reveal="" style={{
         maxWidth: 800, margin: "0 auto",
         textAlign: "center", position: "relative", zIndex: 1,
         display: "flex", flexDirection: "column", alignItems: "center"
@@ -44,7 +44,7 @@ function Cta() {
         </h2>
         
         <p style={{ fontSize: 18, color: "var(--fg2)", lineHeight: 1.5, marginBottom: 40, maxWidth: 600 }}>
-          Join the elite community at Mr & Mrs. Muscle. Get your tailored plan today and start seeing results tomorrow.
+          Join the elite community at Raw Fitness. Get your tailored plan today and start seeing results tomorrow.
         </p>
         
         <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center" }}>

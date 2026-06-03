@@ -123,7 +123,7 @@ function Testimonials() {
           display: "flex", alignItems: "flex-end", justifyContent: "space-between",
           gap: 32, marginBottom: 48, flexWrap: "wrap",
         }}>
-          <div style={{ maxWidth: 720 }}>
+          <div data-reveal="" style={{ maxWidth: 720 }}>
             <div className="eyebrow" style={{
               fontSize: 13, fontWeight: 600, letterSpacing: "0.18em",
               textTransform: "uppercase", color: "var(--accent)", marginBottom: 12,

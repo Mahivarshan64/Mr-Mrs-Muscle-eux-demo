@@ -30,14 +30,14 @@ function Faq() {
       background: "var(--surface-1)",
     }}>
       <div style={{ maxWidth: 720, margin: "0 auto" }}>
-        <div className="eyebrow" style={{
+        <div data-reveal="" className="eyebrow" style={{
           fontSize: 13, fontWeight: 600, letterSpacing: "0.18em",
           textTransform: "uppercase", color: "var(--accent)", marginBottom: 12,
           textAlign: "center"
         }}>
           · Questions? ·
         </div>
-        <h2 style={{
+        <h2 data-reveal="" data-reveal-delay="80" style={{
           fontFamily: "var(--font-display)",
           fontWeight: 900,
           fontSize: "clamp(32px, 4vw, 56px)",
@@ -49,7 +49,7 @@ function Faq() {
           Frequently Asked
         </h2>
 
-        <div style={{ display: "grid", gap: 16 }}>
+        <div data-reveal="" data-reveal-delay="160" style={{ display: "grid", gap: 16 }}>
           {faqs.map((faq, i) => {
             const isOpen = openIndex === i;
             return (
